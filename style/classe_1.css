@@ -1,0 +1,741 @@
+/*================ Fitness Classes ================ */
+.classe-section-Fitness {
+   
+    height: 130vh;
+    color: white;
+}
+.video-about-Classes video{
+    width: 600px;
+    margin-left: 400px;
+    border-radius: 10px;
+    margin-top: 200px;
+}
+.classe-section-Fitness .des-section-Fitness {
+    margin: auto;
+    width: 80%;
+    padding-top: 230px;
+}
+.classe-section-Fitness .des-section-Fitness .title{
+    text-align: center;
+}
+.classe-section-Fitness .title span {
+  text-transform: uppercase;
+  background: #ee0f0fb9;
+  color: #fff;
+  padding: 0px 10px;
+  border-radius: 5px;
+}
+.classe-section-Fitness .title h1 {
+  font-size: 50px;
+  text-transform: capitalize;
+}
+.classe-section-Fitness .parent-cards {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin: auto;
+  margin-top: 30px;
+}
+.classe-section-Fitness .parent-cards .card.mr {
+  margin: 0 5%;
+}
+.classe-section-Fitness .parent-cards .card {
+  width: 26%;
+  background: #fffdfd;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+}
+.classe-section-Fitness .parent-cards .card .image-card img{
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+  border-radius:5px 5px 0px 0px;
+  object-position: top;
+}
+.classe-section-Fitness .parent-cards .card .title-card {
+  display: flex;
+  color: #000000c7;
+  text-align: center;
+  align-items: center;
+  padding: 10px;
+}
+.classe-section-Fitness .parent-cards .desc-title-card {
+   padding: 0 10px;
+}
+.classe-section-Fitness .parent-cards .card .title-card i {
+    color: #FA6767;
+    font-size: 30px;
+    margin-right: 10px;
+}
+.classe-section-Fitness .parent-cards .card .title-card h2 {
+    font-size: 25px;
+}
+.classe-section-Fitness .parent-cards .card .title-card h2 a {
+    text-decoration: none;
+    color: #000000c2;
+}
+.classe-section-Fitness .parent-cards .card p {
+    padding: 0 10px;
+    color: #000000c2;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+.classe-section-Fitness .parent-voit  {
+    padding: 0 10px;
+}
+.classe-section-Fitness .parent-voit .title-voit {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 5px;
+}
+.classe-section-Fitness .parent-voit .title-voit h4 {
+    color: #000000d3;
+}
+.classe-section-Fitness .parent-voit .title-voit span {
+    color: #FB0B0B;
+    font-weight: 600;
+}
+.classe-section-Fitness .parent-voit .voit {
+    height: 10px;
+    position: relative;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    background: #fff;
+    border-radius: 25px;
+    margin-bottom: 20px;
+}
+.classe-section-Fitness .parent-voit .voit .child-voit{
+    height: 10px;
+    position: absolute;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    background: #FB0B0B;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    width: 70%;
+}
+/* ==========workout-section==== */
+.workout-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: auto;
+  }
+
+.workout-card {
+  position: relative;
+  width: 100%;
+  max-width: 340px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  height: 250px;
+}
+
+.workout-card:hover {
+  transform: scale(1.02);
+}
+
+.workout-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.workout-card:hover img {
+  transform: scale(1.05);
+}
+
+.workout-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+  color: #fff;
+}
+
+.workout-overlay small {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.workout-overlay h3 {
+  margin: 5px 0 0;
+  font-size: 20px;
+}
+
+/* =========classe-power-yoga========= */
+.classe-power-yoga {
+  width: 80%;
+  display: flex;
+  justify-content:space-between;
+  margin: auto;
+  margin-top: 50px;
+}
+.classe-power-yoga .childe-classe-yoga-left {
+  width: 25%;
+}
+.classe-power-yoga .childe-classe-yoga {
+  text-align: start;
+  width: 60%;
+}
+.classe-power-yoga .desc-div-classe {
+  border: 1px solid #707070;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  color: #2b2929e7;
+}
+.classe-power-yoga .desc-div-classe h2{
+  font-weight: 500;
+}
+.classe-power-yoga .desc-div-classe a {
+  color: #292828;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.classe-power-yoga .desc-div-classe i {
+  font-size: 20px;
+  margin-top: 5.5px;
+}
+.classe-power-yoga .parent2 {
+  margin-top: 100px;
+}
+.classe-power-yoga .parent2 h1 {
+  border-bottom: 2px solid #FB0B0B;
+  width: 170px;
+}
+
+.classe-power-yoga .parent2 .Join-classe {
+  display: flex;
+  align-items: center;
+  color: #292828;
+}
+.classe-power-yoga .parent2 .Join-classe i {
+  color: #FB0B0B;
+  margin-right: 10px;
+  font-size: 15px;
+}
+/* ==== voit */
+.classe-power-yoga .parent-voit {
+  margin-top: 70px;
+}
+.classe-power-yoga .title-voit {
+  display: flex;
+  justify-content: space-between;
+}
+.classe-power-yoga .title-voit span {
+  color: #FB0B0B;
+  font-weight: 600;
+}
+.classe-power-yoga .parent-voit .voit {
+  height: 10px;
+  position: relative;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  background: #d1d1d1;
+  border-radius: 25px;
+  margin-bottom: 20px;
+}
+.classe-power-yoga .parent-voit .voit .child-voit{
+  height: 10px;
+  position: absolute;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  background: #FB0B0B;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  width: 70%;
+}
+
+/* right */
+.childe-classe-yoga .title-yoga {
+  display: flex;
+  align-items: center;
+}
+.childe-classe-yoga .title-yoga i {
+  margin-right: 10px;
+  color: #FB0B0B;
+  font-size: 35px;
+}
+.childe-classe-yoga .title-yoga h1 {
+  font-size: 35px;
+  text-transform: capitalize;
+}
+
+.childe-classe-yoga .desc-image-coach {
+  display: flex;
+  margin-top: 20px;
+  width: 50%;
+  margin-left: 10px;
+}
+.desc-image-coach .image {
+  padding-right: 10px;
+
+}
+.desc-image-coach .image img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.desc-image-coach .desc-coach h3,span{
+  text-transform: capitalize;
+  margin-bottom: -10px;
+}
+.desc-image-coach .desc-coach span{
+  margin-bottom: -20px;
+  font-size: 13px;
+}
+.childe-classe-yoga .stars {
+  color: gold;
+}
+.childe-classe-yoga .stars span {
+  font-size: 10px;
+  margin-bottom: 30px;
+  color: #292828;
+}
+.childe-classe-yoga .image-childe-classe {
+  height: 320px;
+  margin-top: 40px;
+}
+.childe-classe-yoga .image-childe-classe img{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.childe-classe-yoga .descreption{
+  color: #615E5E;
+  font-size: 14px;
+  margin-top: 30px;
+}
+.childe-classe-yoga .list-classe{
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 30px;
+}
+.childe-classe-yoga .list-classe .child-1 {
+  width: 40%;
+  margin-left: 20px;
+}
+
+.childe-classe-yoga .list-classe .child-2 {
+  text-align: start;
+  width: 45%;
+}
+/* ==== card-Trainer-session*/
+.card-Trainer-session{
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px 30px;
+  max-width: 600px;
+  margin: auto;
+  margin-top: 100px;
+  margin-left: 5px;
+}
+
+.card-Trainer-session img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 30px;
+  object-position: top;
+}
+
+.card-Trainer-session .info {
+  flex: 1;
+}
+
+.card-Trainer-session .info h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.card-Trainer-session .info span {
+  color: red;
+  font-size: 14px;
+}
+
+.card-Trainer-session .info p {
+  color: #444;
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+.card-Trainer-session .info a {
+  text-decoration: none;
+  color: red;
+  font-weight: bold;
+  border-bottom: 2px solid red;
+}
+/* == Coach time == */
+.Coach-time {
+  margin-top: 100px;
+  margin-bottom: 150px;
+}
+.Coach-time .section-title {
+  font-size: 24px;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.Coach-time .section-title::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background-color: red;
+}
+
+.Coach-time .classes-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 500px;
+  margin: auto;
+}
+
+.Coach-time .class-box {
+  flex: 1 1 calc(50% - 20px);
+  min-width: 150px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.Coach-time .class-box:hover {
+  transform: translateY(-5px);
+}
+
+.Coach-time .class-box h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.Coach-time .class-box p {
+  margin: 8px 0 0;
+  color: red;
+  font-weight: bold;
+}
+
+/* ===========sign-In=========== */
+:root {
+  --color-muted: #666;
+  --color-primary: #4f46e5; /* لون بنفسجي جذاب */
+}
+.signin-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 150px 20px;
+  background: #f3f4f6;
+  
+}
+
+.signin-section .card {
+  background: #ffffff;
+  border-radius: 20px;
+  max-width: 1000px;
+  display: flex;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  flex-direction: row;
+  width: 100%;
+}
+
+/* الصورة */
+.signin-section .image {
+  width: 50%;
+  height: auto;
+  display: flex;
+}
+
+.signin-section .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* الفورم */
+.signin-section .content {
+  width: 50%;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  text-align: left;
+}
+
+.signin-section .content img {
+  height: 30px;
+  margin-bottom: 20px;
+}
+
+.signin-section h2 {
+  font-weight: 500;
+  font-size: 22px;
+  margin-bottom: 30px;
+  color: var(--color-muted);
+}
+
+.signin-section .form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.signin-section .textbox {
+  position: relative;
+}
+
+.signin-section .textbox input {
+  height: 50px;
+  padding: 0 16px;
+  border-radius: 8px;
+  border: none;
+  background: #f6f6fb;
+  outline: none;
+  transition: 0.3s;
+  width: 100%;
+}
+
+.signin-section .textbox label {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--color-muted);
+  transition: 0.3s ease;
+  pointer-events: none;
+}
+
+.signin-section .textbox input:focus + label,
+.signin-section .textbox input:not(:placeholder-shown) + label {
+  transform: translateY(-150%) scale(0.85);
+  color: var(--color-primary);
+}
+
+.signin-section button {
+  height: 50px;
+  background: var(--color-primary);
+  color: white;
+  border-radius: 8px;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+  cursor: pointer;
+}
+
+.signin-section button p {
+  margin: 0;
+  font-size: 15px;
+  color: white;
+}
+
+.signin-section .content  p {
+  margin-top: 20px;
+  color: var(--color-muted);
+  font-size: 14px;
+}
+
+.signin-section .content p  a {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.signin-section button {
+  transition: 0.3s, transform 0.2s;
+}
+
+.signin-section button:hover {
+  background: #3f38d3; 
+  transform: translateY(-2px);
+}
+.signin-section .image img {
+  transition: transform 0.5s ease;
+}
+
+.signin-section .image:hover img {
+  transform: scale(1.05);
+}
+
+
+
+
+
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  /* ========== */
+.classe-section-Fitness {
+    height: auto;
+    padding-bottom: 50px;
+  }
+
+  .classe-section-Fitness .des-section-Fitness {
+    padding-top: 150px;
+    width: 90%;
+  }
+  .classe-section-Fitness .title {
+    margin-top: 100px;
+  }
+
+  .classe-section-Fitness .title h1 {
+    font-size: 30px;
+  }
+
+  .classe-section-Fitness .parent-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px; /* مسافة رأسية بين الكروت */
+  }
+
+  .classe-section-Fitness .parent-cards .card {
+    width: 90%;
+    margin: 0 auto;
+  }
+  /* ========= */
+  .workout-card {
+    max-width: 100%;
+  }
+  /* =======sign in */
+  .signin-section .card {
+    flex-direction: column;
+  }
+
+  .signin-section .image,
+  .signin-section .content {
+    width: 100%;
+  }
+
+  .signin-section .image {
+    height: 220px;
+  }
+}
+/* ============= */
+@media (max-width: 480px) {
+  .classe-section-Fitness .title h1 {
+    font-size: 25px;
+  }
+
+  .classe-section-Fitness .parent-cards .card .title-card h2 {
+    font-size: 20px;
+  }
+
+  .classe-section-Fitness .parent-cards .card p {
+    font-size: 14px;
+  }
+}  
+ /*=============  */
+ @media (max-width: 576px) {
+  .classe-power-yoga {
+    width: 95%;
+  }
+
+  .classe-power-yoga .desc-div-classe a {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .childe-classe-yoga .title-yoga {
+    flex-direction: row;
+    align-items: flex-start;
+    align-items: center;
+  }
+
+  .desc-image-coach {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .card-Trainer-session {
+    padding: 15px;
+  }
+  .list-classe li{
+    margin: auto;
+    margin-left: 20px;
+  }
+
+  .card-Trainer-session img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .Coach-time .classes-grid {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .Coach-time .class-box {
+    width: 100%;
+  }
+}
+/* ==================== */
+@media (max-width: 991px) {
+  .classe-power-yoga {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .classe-power-yoga .childe-classe-yoga-left,
+  .classe-power-yoga .childe-classe-yoga {
+    width: 100%;
+  }
+
+  .childe-classe-yoga .desc-image-coach {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .classe-power-yoga .list-classe {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .classe-power-yoga .list-classe .child-1,
+  .classe-power-yoga .list-classe .child-2 {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .card-Trainer-session {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .card-Trainer-session img {
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+
+  .Coach-time .classes-grid {
+    justify-content: center;
+  }
+}

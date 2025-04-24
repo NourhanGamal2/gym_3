@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact-Us</title>
+    <link rel="icon" href="../images/logo.png" type="image/png">
+    <link rel="stylesheet" href="../style/all.min.css">
+    <link rel="stylesheet" href="../style/font-awesome.min.css">
+    <!-- مكتبه الانيميشن  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="../style/about.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../style/classe_1.css">
+</head>
+<body>
+    <!-- =================Navbar================= -->
+    <nav class="navbar">
+        <!-- logo -->
+        <div class="logo">
+            <img src="../images/logo.png" alt="">
+        </div>
+        <!-- menu icon -->
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon"><i class="fas fa-bars"></i></label>
+        <!-- links -->
+        <div class="links">
+            <a href="../indexHome.html" class="active">Home</a>
+            <a href="./aboutUs.html">About</a>
+            <a href="./contact.html">Contact Us</a>
+        
+            <!-- Dropdown 1 -->
+            <div class="dropdown">
+                <input type="checkbox" id="dropdown-toggle-1" />
+                <label for="dropdown-toggle-1" class="dropdown-label">Pages <i class="fas fa-angle-down"></i></label>
+                <div class="dropdown-content">
+                <a href="./trainerPage.html">Trainer page</a>
+                <a href="./Schedual.html">Schedule</a>
+                <a href="./404.html">404 Error</a>
+                </div>
+            </div>
+            <!-- Dropdown 2 -->
+            <div class="dropdown">
+            <input type="checkbox" id="dropdown-toggle-2" />
+            <label for="dropdown-toggle-2" class="dropdown-label">Classes <i class="fas fa-angle-down"></i></label>
+            <div class="dropdown-content">
+                <a href="./classe1.html">Classes1</a>
+                <a href="./classe_2.html">Classes2</a>
+            </div>
+            </div>
+        </div>
+        <!-- sign in button -->
+        <div class="btn">
+            <button><a href="./signIn.html">Sign In</a></button>
+        </div>
+    </nav>
+
+    <!-- =================hero-section================= -->
+    <section class="about-hero-section Trainer-page">
+        <div>
+            <h1 data-aos="fade-right" > contact us </h1>
+            <div class="links" data-aos-delay="400">
+                <a href="../indexHome.html">Home</a>
+                <i class="fas fa-angle-right"></i>
+                <a href="../indexHome.html">pages</a>
+                <i class="fas fa-angle-right"></i>
+                <a href="./404.html">Contact</a>
+            </div>
+        </div>
+    </section>
+    <!-- ============contact-section============= -->
+    <section class="contact-section">
+        <div class="contact-left">
+          <span class="tag">Contact Us</span>
+          <h2>Get In Touch</h2>
+      
+          <div class="info-box">
+            <div class="icon-circle">
+                <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="info">
+              <strong>Location :</strong>
+              <p>123 Fitness Street, New York, NY 10001</p>
+            </div>
+          </div>
+      
+          <div class="info-box">
+            <div class="icon-circle">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div class="info">
+              <strong>Call Now :</strong>
+              <p>+20 123 456 7892</p>
+            </div>
+          </div>
+      
+          <div class="info-box">
+            <div class="icon-circle">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="info">
+              <strong>Email :</strong>
+              <p>contact@fitgym.com</p>
+            </div>
+          </div>
+        </div>
+        <!-- =====right====== -->
+        <div class="right" >
+            <h3>Registration</h3>
+            <form>
+                <input type="text" placeholder="full Name" required />
+                <input type="email" placeholder="Email" required />
+                <input type="text" placeholder="Phone" required />
+                <textarea rows="4" placeholder="message" required></textarea>
+                <button class="submit-btn" data-aos="flip-up">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ===================footer================= -->
+    <footer>
+        <div class="footer-section">
+            <img src="../images/logo.png" alt="FitGym Logo">
+            <p>
+            Committed to your fitness journey<br>
+            pushing limits, achieving goals,
+            </p>
+        </div>
+    
+        <div class="footer-section footer-links">
+            <h3>Links</h3>
+            <a href="../indexHome.html">Home</a>
+            <a href="./aboutUs.html">About</a>
+            <a href="./contact.html">Contact Us</a>
+            <a href="../indexHome.html">Pages</a>
+            <a href="./classe1.html">Classes</a>
+        </div>
+    
+        <div class="footer-section contact-info">
+            <h3>Contact Us</h3>
+            <div><i class="fas fa-map-marker-alt"></i>123 Fitness Street,<br> New York, NY 10001</div>
+            <div><i class="fas fa-envelope"></i>contact@fitgym.com</div>
+            <div><i class="fas fa-phone"></i>+20 123 456 7892</div>
+        </div>
+    
+        <div class="footer-section newsletter">
+            <h3>New messages</h3>
+            <input type="email" placeholder="Email" />
+            <div class="social-icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            </div>
+        </div>
+    </footer>
+    
+    <div class="footer-bottom">
+    © 2025 FitGym. All Rights Reserved
+    </div> 
+    
+
+    <!-- ================== الكود الخاص بالانيميشن =============== -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+        duration: 1000,
+        once: false // ده اللي يخلي الأنيميشن يتكرر
+        });
+    </script>
+</body>
+</html>

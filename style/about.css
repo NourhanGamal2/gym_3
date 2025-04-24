@@ -1,0 +1,793 @@
+/* ==============hero-section=================== */
+.about-hero-section {
+  /* حاطط المكان اللي هينتهي عند التغميق */
+  background: linear-gradient(to right bottom, rgba(0,0,0,.9),rgba(0,0,0,.1)),url(../images/HeroImage.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.about-hero-section div {
+  margin-left: 50px;
+}
+.about-hero-section div h1{
+  text-transform: capitalize;
+  font-size: 80px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.about-hero-section .navbar a {
+  color: white;
+  background-color: #CC3A3A;
+  padding: 5px 15px;
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: ease .5s;
+  text-transform: uppercase;
+}
+.about-hero-section .navbar a:hover{
+  transform: scale(1.1);
+  background-color: brown;
+}
+.about-hero-section p {
+  text-transform: uppercase;
+  font-size: 20px;
+}
+  
+/* ============== */
+.about-hero-section .links {
+  display: flex;
+  align-items: center;
+  background-color: #000;
+  padding: 10px ;
+  border-radius: 999px;
+  color: white;
+  font-weight: bold;
+  width: 200px;
+  text-align: center;
+  margin-left: -5px;
+  margin-top: 20px;
+}
+/* لل Trainer page */
+.Trainer-page .links {
+  display: flex;
+  align-items: center;
+  background-color: #000;
+  padding: 10px ;
+  border-radius: 999px;
+  color: white;
+  font-weight: bold;
+  width: 300px;
+  text-align: center;
+  margin-left: -5px;
+  margin-top: 20px;
+}
+
+.about-hero-section .links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  background: none;
+  margin-right: 10px;
+}
+
+.about-hero-section .links i {
+  color: white;
+  font-size: 20px;
+  margin-top: 5px;
+}
+/* ===== best-trainer ===== */
+.about-best-trainer {
+  background-image: linear-gradient(to right bottom, rgba(0,0,0,.9),rgba(0,0,0,.1)),url(../images/section1.jpg);
+  height: 120vh;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  color: white;
+  margin-top: -200px;
+}
+.about-best-trainer .des-best-trainer {
+  margin: auto;
+  width: 80%;
+  padding-top: 100px;
+}
+.about-best-trainer .des-best-trainer .title{
+  text-align: center;
+  margin-top: 150px;
+}
+.about-best-trainer .title span {
+  text-transform: uppercase;
+  background: #ee0f0fb9;
+  color: #fff;
+  padding: 0px 10px;
+  border-radius: 5px;
+}
+.about-best-trainer .title h1 {
+  font-size: 40px;
+  text-transform: capitalize;
+}
+.about-best-trainer .parent-cards {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+}
+.about-best-trainer .parent-cards .card.mr {
+  margin: 0 5%;
+}
+.about-best-trainer .parent-cards .card {
+  width: 26%;
+  background: transparent;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  color: #fff;
+  text-align: center;
+  border: 1px solid #CC3A3A;
+}
+.about-best-trainer .parent-cards .card .image-card img{
+  width: 70%;
+  height: 190px;
+  border-radius: 50%;
+  margin-top: 10px;
+  object-fit: cover;
+  object-position: top;
+}
+.about-best-trainer .parent-cards .card .title-card {
+  display: block;
+  color: #000000c7;
+  text-align: center;
+  align-items: center;
+  padding: 10px;
+  line-height: 1.3;
+  margin-top: 15px;
+}
+.about-best-trainer .parent-cards .desc-title-card {
+  padding: 0 10px;
+  text-align: center;
+}
+.about-best-trainer .parent-cards .card .title-card h2 {
+  font-size: 25px;
+  color: #fff;
+}
+.about-best-trainer .parent-cards .card .title-card span {
+  font-size: 12px;
+  color: #fff;
+}
+.about-best-trainer .parent-icons {
+  padding: 0 10px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.about-best-trainer .icons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+.about-best-trainer .icons a{
+  text-decoration: none;
+}
+.about-best-trainer .icons i{
+  margin-right: 7px;
+  font-size: 20px;
+  color: #CC3A3A;
+  transition: ease .5;
+}
+.about-best-trainer .icons i:hover{
+  transform: scale(1.2);
+}
+/* =============profile-Trainer============ */
+.profile-container-Trainer {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 70px;
+}
+
+.profile-container-Trainer .left-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.profile-container-Trainer .profile-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #eee;
+  object-position: top;
+}
+
+.profile-container-Trainer .info-section {
+  flex: 1;
+}
+
+.profile-container-Trainer .info-section h2 {
+  margin: 0;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.profile-container-Trainer .info-section .subtitle {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.profile-container-Trainer .info-section p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.profile-container-Trainer .personal-info {
+  background: #1e1e1e;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: left;
+  margin-top: 50px;
+}
+.profile-container-Trainer .personal-info .parent-info{
+  display: flex;
+  justify-content: space-around;
+}
+
+.profile-container-Trainer .personal-info p {
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+.profile-container-Trainer .personal-info i {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.profile-container-Trainer .info-section p{
+  width: 400px;
+}
+.profile-container-Trainer hr {
+  width: 400px;
+  margin-bottom: 30px;
+}
+
+.profile-container-Trainer .skills-section h3 {
+  margin-bottom: 20px;
+  border-bottom: 2px solid red;
+  width: 130px;
+}
+
+.profile-container-Trainer .skill {
+  margin-bottom: 20px;
+}
+
+.profile-container-Trainer .skill-name {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  font-size: 14px;
+  width: 340px;
+}
+.profile-container-Trainer .skill-name span.percentage {
+  color: red;
+  font-weight: 600;
+}
+
+.profile-container-Trainer .progress-bar {
+  background: #eee;
+  height: 8px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.profile-container-Trainer .progress {
+  height: 100%;
+  background: red;
+}
+/* ===== classe */
+.classes-section-Trainer  {
+  text-align: start;
+  margin-top: 100px;
+  margin-bottom: 70px;
+}
+
+.classes-section-Trainer .section-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+}
+
+.classes-section-Trainer .section-title::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: red;
+  margin: 8px auto 0;
+}
+
+.classes-section-Trainer .cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.classes-section-Trainer .class-card {
+  width: 270px;
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.classes-section-Trainer .class-card:hover {
+  transform: translateY(-5px);
+}
+
+.classes-section-Trainer .class-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: top;
+}
+.classes-section-Trainer img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius:5px 5px 0px 0px;
+}
+
+.classes-section-Trainer .card-content {
+  padding: 16px;
+  text-align: left;
+}
+
+.classes-section-Trainer h3.card-title {
+  font-size: 20px;
+  margin: 0 0 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #111;
+  width: 250px;
+  border-bottom: none;
+}
+.classes-section-Trainer h3.card-title i {
+  color: red;
+}
+
+.classes-section-Trainer p.card-description {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 16px;
+  width: 250px;
+}
+
+.classes-section-Trainer .progress-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  /* color: red; */
+  margin-bottom: 8px;
+}
+.classes-section-Trainer .progress-info span.progress-percentage {
+  color: red;
+}
+
+.classes-section-Trainer .progress-bar {
+  background-color: #eee;
+  border-radius: 4px;
+  height: 8px;
+  width: 250px;
+}
+
+.classes-section-Trainer .progress-fill {
+  background-color: red;
+  height: 100%;
+  border-radius: 4px;
+  width: 90%;
+}
+
+/* =====Schedual */
+.our-statics.Schedual {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.container hr {
+  margin-top: 70px;
+  height: 1px;
+  border: none;
+  background: rgba(139, 137, 137, 0.425);
+}
+/* ======Error-section======= */
+.section-Error {
+  width: 80%;
+  margin: auto;
+}
+.section-Error .image-container img {
+  width: 55%;
+  max-width: 100%;
+  margin: auto;
+  text-align: center;
+  display: block;
+  align-items: center;
+}
+.section-Error p {
+  width: 50%;
+  margin-top: 10px;
+  color: #3b3b3b;
+  font-size: 20px;
+  margin: auto;
+  text-align: center;
+  line-height: 1.5;
+}
+.section-Error  .button {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+.section-Error .btn {
+  display: inline-block;
+  margin-top: 20px;
+  background-color: #ff3c3c;
+  color: white;
+  padding: 5px 30px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.section-Error .btn:hover {
+  background-color: #e63232;
+}
+/* =======contact-section====== */
+
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 20px;
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.contact-left {
+  max-width: 40%;
+}
+
+.contact-left .tag {
+  display: inline-block;
+  background-color: #f8c2c2;
+  color: #e63838;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.contact-left h2 {
+  font-size: 28px;
+  margin: 10px 0 30px;
+  color: #222;
+}
+
+.info-box {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 25px;
+}
+
+.icon-circle {
+  width: 40px;
+  height: 40px;
+  background-color: #fce8e8;
+  color: #e63838;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  margin-right: 15px;
+}
+
+.info strong {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.info p {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+}
+/* right */
+.contact-section .right {
+  width: 40%;
+  border: 1px solid #999;
+  padding: 20px;
+  border-radius: 5px;
+  margin-left: 200px;
+}
+
+.contact-section  .right h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid red;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.contact-section .right input,
+.contact-section .right textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 13px;
+  resize: none;
+}
+
+.contact-section .right .submit-btn {
+  background-color: #d74b4b;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  font-size: 14px;
+}
+
+.contact-section  .right .submit-btn:hover {
+  background-color: #ff3c00;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+      }
+    .about-hero-section .links {
+      flex-direction: row;
+      width: 200px;
+      padding: 0px 12px;
+      margin: 20px auto 0;
+      font-size: 14px;
+      gap: 5px;
+      justify-content: center;
+      margin-left: -5px;
+    }
+  
+    .about-hero-section .links a {
+      margin: 0 6px;
+      font-size: 18px;
+      text-decoration: none;
+      border-bottom: none;
+    }
+  
+    .about-hero-section .links i {
+      margin: 0 5px;
+      font-size: 16px;
+    }
+    /* ================= */
+    /* ==========best-trainer========= */
+    .about-best-trainer {
+        height: auto;
+        padding-bottom: 40px;
+      }
+    
+      .about-best-trainer .des-best-trainer .title {
+        margin-top: 150px;
+      }
+    
+      .about-best-trainer .parent-cards .card {
+        width: 90%;
+      }
+    
+      .about-best-trainer .parent-cards {
+        width: 100%;
+      }
+    
+      .about-best-trainer .parent-cards .card .image-card img {
+        width: 60%;
+        height: 160px;
+      }
+    
+      .about-best-trainer .title h1 {
+        font-size: 28px;
+      }
+      /* =========== */
+      .profile-container-Trainer {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 20px;
+      }
+    
+      .profile-container-Trainer .info-section p,
+      .profile-container-Trainer hr {
+        width: 100%;
+      }
+    
+      .profile-container-Trainer .skill-name {
+        width: 100%;
+      }
+    
+      .profile-container-Trainer .profile-img {
+        width: 150px;
+        height: 150px;
+      }
+    
+      .profile-container-Trainer .personal-info {
+        width: 100%;
+      }
+      .Trainer-page .links{
+        width: auto;
+      }
+      /* ======== */
+      .section-Error .image-container img {
+        width: 80%;
+      }
+    
+      .section-Error p,
+      .section-Error .button {
+        width: 90%;
+        font-size: 18px;
+      }
+    
+      .section-Error .btn {
+        padding: 8px 20px;
+        font-size: 16px;
+      }
+  }
+  /* ==================== */
+  @media (max-width: 480px) {
+    .about-hero-section div h1 {
+        font-size: 70px;
+    }
+    /* ====== */
+    .about-hero-section .links {
+      flex-direction: row;
+      padding: 6px 10px;
+      gap: 3px;
+      font-size: 13px;
+      flex-wrap: nowrap;
+    }
+  
+    .about-hero-section .links a {
+      margin: 0 4px;
+      font-size: 13px;
+    }
+  
+    .about-hero-section .links i {
+      font-size: 14px;
+      margin: 0 3px;
+    }
+    /* ============= */
+    .section-Error .image-container img {
+      width: 100%;
+    }
+  
+    .section-Error p {
+      font-size: 16px;
+    }
+  
+    .section-Error .btn {
+      padding: 10px 20px;
+      font-size: 15px;
+    }
+  }
+/* ============ */
+@media (max-width: 1024px) {
+    /* =========best-trainer======= */
+    .about-best-trainer .parent-cards {
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+  
+    .about-best-trainer .parent-cards .card {
+      width: 45%;
+    }
+  
+    .about-best-trainer .parent-cards .card.mr {
+      margin: 0;
+    }
+}
+  /*============  */
+@media (max-width: 992px) {
+  .about-best-trainer .parent-cards {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .about-best-trainer .parent-cards .card {
+    width: 45%;
+  }
+
+  .about-best-trainer .parent-cards .card.mr {
+    margin: 0;
+  }
+  /* =========== */
+  .contact-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-left,
+  .contact-section .right {
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+  }
+
+  .contact-section .right {
+    margin-top: 30px;
+    margin-left: 0;
+  }
+}
