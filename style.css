@@ -1,0 +1,1458 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Cairo", sans-serif;
+  box-sizing: border-box;
+  /* هتعمل اسكرول بالراحة */
+  scroll-behavior: smooth;
+}
+/* =========== Navbar ========= */
+nav.navbar {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  padding: 0 50px;
+  flex-wrap: wrap;
+  position: relative;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  background: #fff;
+}
+nav.navbar .logo img {
+  width: 80px;
+}
+
+nav.navbar .links a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 7px;
+  text-transform: capitalize;
+}
+nav.navbar .btn button {
+  padding: 0px 20px;
+  background: #CC3A3A;
+  color: white;
+  border: none;
+  border-radius: 25px;   
+}
+nav.navbar .btn a {
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+nav.navbar .dropdown:hover .dropdown-content {
+  display: flex;
+}
+
+nav.navbar .dropdown-content a {
+  padding: 10px;
+  color: #000;
+  text-decoration: none;
+}
+
+nav.navbar .dropdown-content a:hover {
+  background-color: #eee;
+  color: red;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #000;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+/* إخفاء checkboxes */
+.dropdown input[type="checkbox"] {
+  display: none;
+}
+  
+  /* شكل اللينك الأساسي */
+.dropdown-label {
+  cursor: pointer;
+  display: block;
+  padding: 7px;
+  color: #000;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 18px;
+}
+  
+  
+  /* شكل القائمة */
+.dropdown-content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  flex-direction: column;
+  display: none;
+  min-width: 150px;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+  
+  /* لما يتعلم الـ checkbox تظهر القائمة */
+.dropdown input[type="checkbox"]:checked + .dropdown-label + .dropdown-content {
+  display: flex;
+}
+  
+/* =======dropdown======== */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 180px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  z-index: 1;
+  margin-top: 15px;
+  overflow: hidden;
+  left: 0;
+}
+
+.dropdown-content a {
+  color: #2c3e50;
+  padding: 14px 18px;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+nav .btn button {
+  background: #CC3A3A;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 0px 20px;
+  border: none;
+  border-radius: 25px;
+}
+nav .btn button a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 400;
+  padding: 7px;
+  text-transform: capitalize;
+}
+.dropdown-content label {
+  display: block;
+}
+  
+.dropdown-content label a {
+  display: block;
+  padding: 10px;
+  color: #000;
+  text-decoration: none;
+}
+  
+.dropdown-content label a:hover {
+  background-color: #eee;
+}
+
+
+/* ==============hero-section=================== */
+.hero-section {
+  /* حاطط المكان اللي هينتهي عند التغميق */
+  background: linear-gradient(to right bottom, rgba(0,0,0,.9),rgba(0,0,0,.1)),url(../images/HeroImage.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.hero-section div {
+  margin-left: 50px;
+}
+.hero-section div h1{
+  text-transform: uppercase;
+  font-size: 80px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.hero-section a {
+  color: white;
+  background-color: #CC3A3A;
+  padding: 5px 15px;
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: ease .5s;
+  text-transform: uppercase;
+}
+.hero-section a:hover{
+  /* هتزيد طولها وعرضعا عشرة في المية */
+  transform: scale(1.1);
+  background-color: brown;
+}
+.hero-section p {
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+/* =======about-section======= */
+section.about-section {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+section.about-section .description-about {
+  width: 40%;
+}
+section.about-section .description-about h1{
+  font-size: 35px;
+  line-height: 1.5;
+  margin-top: 15px;
+}
+section.about-section .description-about p{
+  font-size: 15px;
+  line-height: 1.5;
+  margin-top: 15px;
+  color: #888686;
+}
+.about-section .description span {
+  text-transform: uppercase;
+  background: #ee0f0fb9;
+  color: #fff;
+  padding: 0px 10px;
+  border-radius: 5px;
+}
+.desc-image-coach {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  margin-top: 20px;
+  width: 93%;
+}
+.desc-image-coach .parent-desc-coach {
+  display: flex; 
+}
+.desc-image-coach .image {
+  padding-right: 10px;
+
+}
+.desc-image-coach .image img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.desc-image-coach .desc-coach h3,span{
+  text-transform: capitalize;
+  margin-bottom: -10px;
+}
+.desc-image-coach .desc-coach span{
+  margin-bottom: -20px;
+  font-size: 13px;
+}
+.desc-image-coach .button button{
+  padding: 5px 20px;
+  background: #FB0B0B;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 17px;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 10px;
+  display: block;
+  align-items: center;
+}
+
+.about-section .video-about {
+  width: 50%;
+}
+.about-section .video-about video {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+/*================ Fitness Classes ================ */
+.section-Fitness {
+  background-image: linear-gradient(to right bottom, rgba(0,0,0,.9),rgba(0,0,0,.1)),url(../images/section1.jpg);
+  height: 130vh;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  color: white;
+  margin-top: -200px;
+}
+.video-about-Classes video{
+  width: 600px;
+  margin-left: 400px;
+  border-radius: 10px;
+  margin-top: 200px;
+}
+.section-Fitness .des-section-Fitness {
+  margin: auto;
+  width: 80%;
+  padding-top: 230px;
+}
+.section-Fitness .des-section-Fitness .title{
+  text-align: center;
+}
+.section-Fitness .title span {
+  text-transform: uppercase;
+  background: #ee0f0fb9;
+  color: #fff;
+  padding: 0px 10px;
+  border-radius: 5px;
+}
+.section-Fitness .title h1 {
+  font-size: 50px;
+  text-transform: capitalize;
+}
+.section-Fitness .parent-cards {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin: auto;
+  margin-top: 30px;
+}
+.section-Fitness .parent-cards .card.mr {
+  margin: 0 5%;
+}
+.section-Fitness .parent-cards .card {
+  width: 26%;
+  background: #eee;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+}
+.section-Fitness .parent-cards .card .image-card img{
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+  border-radius:5px 5px 0px 0px;
+}
+.section-Fitness .parent-cards .card .title-card {
+  display: flex;
+  color: #000000c7;
+  text-align: center;
+  align-items: center;
+  padding: 10px;
+}
+.section-Fitness .parent-cards .desc-title-card {
+  padding: 0 10px;
+}
+.section-Fitness .parent-cards .card .title-card i {
+  color: #FA6767;
+  font-size: 30px;
+  margin-right: 10px;
+}
+.section-Fitness .parent-cards .card .title-card h2 {
+  font-size: 25px;
+}
+.section-Fitness .parent-cards .card p {
+  padding: 0 10px;
+  color: #000000c2;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+.section-Fitness .parent-voit  {
+  padding: 0 10px;
+}
+.section-Fitness .parent-voit .title-voit {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+.section-Fitness .parent-voit .title-voit h4 {
+  color: #000000d3;
+}
+.section-Fitness .parent-voit .title-voit span {
+  color: #FB0B0B;
+  font-weight: 600;
+}
+.section-Fitness .parent-voit .voit {
+  height: 10px;
+  position: relative;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  background: #fff;
+  border-radius: 25px;
+  margin-bottom: 20px;
+}
+.section-Fitness .parent-voit .voit .child-voit{
+  height: 10px;
+  position: absolute;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  background: #FB0B0B;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  width: 70%;
+}
+/* =========SCHEDULE======= */
+.container {
+  width: 80%;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.container .des-section-Fitness .title {
+  text-align: center;
+}
+
+.container .title span {
+  text-transform: uppercase;
+  background: #ee0f0fb9;
+  color: #fff;
+  padding: 0px 10px;
+  border-radius: 5px;
+}
+
+.container h1 {
+  margin-bottom: 30px;
+  font-size: 35px;
+}
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 15px; /* المسافات بين الخانات */
+}
+
+th, td {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: bold;
+  background-color: #fff;
+}
+
+thead th {
+  background-color: black;
+  color: white;
+}
+
+td span {
+  display: block;
+  font-size: 12px;
+  font-weight: normal;
+  color: gray;
+  margin-top: 5px;
+}
+
+.time {
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.clock {
+  font-size: 18px;
+}
+/* ===== best-trainer ===== */
+.best-trainer {
+  background-image: linear-gradient(to right bottom, rgba(0,0,0,.9),rgba(0,0,0,.1)),url(../images/section1.jpg);
+  height: 105vh;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  color: white;
+  margin-top: 90px;
+}
+.best-trainer .des-best-trainer {
+  margin: auto;
+  width: 80%;
+  padding-top: 100px;
+}
+.best-trainer .des-best-trainer .title{
+  text-align: center;
+}
+.best-trainer .title span {
+  text-transform: uppercase;
+  background: #ee0f0fb9;
+  color: #fff;
+  padding: 0px 10px;
+  border-radius: 5px;
+}
+.best-trainer .title h1 {
+  font-size: 40px;
+  text-transform: capitalize;
+}
+.best-trainer .parent-cards {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin: auto;
+  margin-top: 30px;
+}
+.best-trainer .parent-cards .card.mr {
+  margin: 0 5%;
+}
+.best-trainer .parent-cards .card {
+  width: 26%;
+  background: transparent;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  color: #fff;
+  text-align: center;
+  border: 1px solid #CC3A3A;
+}
+.best-trainer .parent-cards .card .image-card img{
+  width: 70%;
+  height: 190px;
+  border-radius: 50%;
+  margin-top: 10px;
+  object-fit: cover;
+  object-position: top;
+}
+.best-trainer .parent-cards .card .title-card {
+  display: block;
+  color: #000000c7;
+  text-align: center;
+  align-items: center;
+  padding: 10px;
+  line-height: 1.3;
+  margin-top: 15px;
+}
+.best-trainer .parent-cards .desc-title-card {
+ padding: 0 10px;
+ text-align: center;
+}
+.best-trainer .parent-cards .card .title-card h2 {
+  font-size: 25px;
+  color: #fff;
+}
+.best-trainer .parent-cards .card .title-card span {
+  font-size: 12px;
+  color: #fff;
+}
+.best-trainer .parent-icons {
+  padding: 0 10px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.best-trainer .icons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+.best-trainer .icons a{
+  text-decoration: none;
+}
+.best-trainer .icons i{
+  margin-right: 7px;
+  font-size: 20px;
+  color: #CC3A3A;
+  transition: ease .5;
+}
+.best-trainer .icons i:hover{
+  transform: scale(1.2);
+}
+/* =========pricing-section======== */
+.pricing-section { 
+  padding: 60px 20px;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+.pricing-section .pricing-header .sub-title {
+  padding: 5px 15px;
+  background: #ee0f0fb9;
+  color: #fff;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.pricing-section .pricing-header h2 {
+  font-size: 36px;
+  margin: 10px 0 40px;
+  color: #111;
+}
+.pricing-section .pricing-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.pricing-section .card {
+  background: #fff;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.pricing-section .card-header {
+  padding: 25px;
+  color: white;
+}
+.pricing-section .card-header.red {
+  background-color: #FF3C00;
+  height: 105px;
+  text-align: center;
+  /* line-height: 1.4; */
+}
+.pricing-section .card-header.dark {
+  background-color: #0e0e15;
+  height: 105px;
+}
+.pricing-section .card-header.light {
+  background-color: #fff;
+  color: #000;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  height: 105px;
+}
+.pricing-section .card-header h3 {
+  margin-bottom: -10px;
+  font-size: 20px;
+  margin-top: -10px;
+}
+
+.pricing-section .price {
+  font-size: 24px;
+  font-weight: bold;
+}
+.pricing-section .price span {
+  font-size: 32px;
+}
+.pricing-section .price small {
+  font-size: 14px;
+}
+.pricing-section .features {
+  list-style: none;
+  padding: 0 20px;
+  text-align: left;
+  margin: 0;
+  flex: 1;
+}
+.pricing-section .card i {
+  color: green;
+  font-size: 17px;
+  margin-right: 5px;
+}
+.pricing-section .features li {
+  padding: 10px 0;
+  font-size: 16px;
+}
+.pricing-section .join-btn {
+  margin: 20px;
+  padding: 10px 20px;
+  border: 2px solid #ff3c00;
+  background: none;
+  color: #ff3c00;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.pricing-section .join-btn:hover {
+  background-color: #ff3c00;
+  color: #fff;
+}
+
+/* ==== our statics ==== */
+.our-statics {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  padding: 50px 0;
+  font-family: Arial, sans-serif;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.our-statics .left {
+  width: 40%;
+}
+
+.our-statics .sub-title {
+  background: #ee0f0fb9;
+  color: #fff;
+  padding: 5px 15px;
+  display: inline-block;
+  border-radius: 7px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  font-size: 13px;
+}
+
+.our-statics h2 {
+  font-size: 28px;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.our-statics p {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.progress-box {
+  margin-bottom: 30px;
+}
+.progress-box .voit{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.progress-box span {
+  font-weight: bold;
+  display: flex;
+  width: 200px;
+  font-size: 14px;
+  text-align: start;
+}
+
+.progress-box .percent {
+  color: red;
+  font-weight: bold;
+  font-size: 13px;
+  text-align: end;
+  width: 100px;
+}
+
+.progress-bar {
+  height: 6px;
+  background-color: #eee;
+  border-radius: 4px;
+  margin-top: 5px;
+  overflow: hidden;
+  width: 350px;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: red;
+}
+
+.our-statics .right {
+  width: 40%;
+  border: 1px solid #999;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.our-statics .right h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid red;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.our-statics .right input,
+.our-statics .right textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 13px;
+  resize: none;
+}
+
+.our-statics .right .submit-btn {
+  background-color: #d74b4b;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  font-size: 14px;
+}
+
+.our-statics .right .submit-btn:hover {
+  background-color: #ff3c00;
+}
+/* ===============testimonial=========== */
+.section-testimonial {
+  padding: 60px 0;
+  text-align: center;
+  background: #0c0c0c;
+  color: #fff;
+}
+
+.section-testimonial .title span {
+  background: #a51010;
+  padding: 5px 15px;
+  color: #fff;
+  border-radius: 7px;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.section-testimonial .title h1 {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.section-testimonial .slider-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-testimonial .slider-cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.section-testimonial .slider-cards .card {
+  background: #fff;
+  color: #000;
+  width: 280px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.section-testimonial .slider-cards .card:hover {
+  transform: translateY(-5px);
+}
+
+.section-testimonial .card .client-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  margin-right: 10px;
+}
+
+.section-testimonial .card .sub-title {
+  color: #d42b2b;
+  font-size: 14px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+
+}
+.section-testimonial .parent-testimonial {
+  display: flex;
+  line-height: 1.4;
+  text-align: center;
+  align-items: center;
+}
+
+.section-testimonial .card p {
+  font-size: 13px;
+  margin-bottom: 15px;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.section-testimonial .stars {
+  color: gold;
+  font-size: 18px;
+  text-align: start;
+}
+
+.section-testimonial .slider-dots {
+  margin-top: 25px;
+}
+
+.section-testimonial .slider-dots .dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  border-radius: 50%;
+  margin: 0 4px;
+  opacity: 0.3;
+  transition: 0.3s;
+}
+
+.section-testimonial .slider-dots .dot.active {
+  background: red;
+  opacity: 1;
+}
+
+/* ==========footer======== */
+footer {
+  background-color: #f5f5f5;
+  padding: 40px 20px 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  color: #333;
+}
+
+.footer-section {
+  margin: 10px;
+  min-width: 200px;
+}
+
+.footer-section img {
+  width: 120px;
+}
+
+.footer-section p {
+  font-size: 16px;
+  margin-top: 10px;
+  color: #333;
+  font-weight: bold;
+}
+
+.footer-section h3 {
+  margin-bottom: 10px;
+  border-bottom: 2px solid red;
+  display: inline-block;
+  font-size: 22px;
+}
+
+.footer-links a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+  margin: 5px 0;
+  font-size: 16px;
+  transition: ease .3s;
+}
+.footer-links a:hover {
+  color: red;
+  transform: .3s;
+} 
+
+.contact-info div {
+  display: flex;
+  align-items: center;
+  margin: 6px 0;
+  font-size: 16px;
+}
+
+.contact-info div i {
+  margin-right: 10px;
+  color: red;
+  font-size: 18px;
+}
+.footer-section .newsletter {
+  display: block;
+  margin-bottom: 20px;
+}
+.newsletter input {
+  padding: 8px;
+  width: 140px;
+  border: none;
+  background: #fff;
+  border-bottom: 2px solid red;
+  margin-bottom: 10px;
+  display: block;
+}
+.newsletter input:focus {
+  border: none;
+  outline: none;
+}
+
+.social-icons i {
+  font-size: 20px;
+  color: #fd4747;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.footer-bottom {
+  background-color: #d4d4d4;
+  text-align: center;
+  padding: 10px;
+  font-size: 17px;
+}
+
+
+/* ========================= */
+@media (max-width: 992px) {
+    section.about-section {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    section.about-section .description-about,
+    .about-section .video-about {
+      width: 100%;
+    }
+  
+    .desc-image-coach {
+      flex-direction: row;
+      align-items: start;
+      text-align: start;
+    }
+  
+    .desc-image-coach .parent-desc-coach {
+      flex-direction: row;
+      align-items: start;
+    }
+  
+    .desc-image-coach .image {
+      padding: 0;
+      margin-bottom: 10px;
+      margin-right: 20px;
+    }
+  
+    .desc-image-coach .button {
+      margin-top: 10px;
+    }
+  
+    section.about-section .description-about h1 {
+      font-size: 28px;
+      text-align: start;
+    }
+  
+    section.about-section .description-about p {
+      text-align: start;
+    }
+    /* ===Pricing Table==== */
+    .pricing-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+    /* =======our-statics======== */
+    .our-statics {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .our-statics .left,
+    .our-statics .right {
+      width: 100%;
+    }
+  
+    .progress-bar {
+      width: 100%;
+    }
+  
+    .progress-box span {
+      width: auto;
+    }
+  
+    .progress-box .percent {
+      width: auto;
+    }
+  
+    .progress-box .voit {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    /* =========== */
+    footer {
+      flex-direction: column;
+      align-items: center;
+      text-align: start;
+    }
+  
+    .footer-section {
+      width: 100%;
+      max-width: 400px;
+    }
+  
+    .footer-section img {
+      margin: 0 auto;
+    }
+  
+    .contact-info div {
+      justify-content: start;
+    }
+  
+    .newsletter input {
+      width: 80%;
+      margin: 0 0 20px ;
+    }
+  
+    .social-icons {
+      justify-content: start;
+    }
+}
+/* ============================ */
+@media (max-width: 576px) {
+    section.about-section .description-about h1 {
+      font-size: 24px;
+    }
+  
+    .desc-image-coach .desc-coach span {
+      font-size: 12px;
+    }
+  
+    .desc-image-coach .button button {
+      font-size: 15px;
+      padding: 5px 15px;
+    }
+}
+  
+/* ================== */
+@media (max-width: 1024px) {
+    .video-about-Classes video {
+      width: 90%;
+      margin: 100px auto 0;
+      display: block;
+    }
+  
+    .section-Fitness .parent-cards {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px; /* مسافة بين الكروت */
+    }
+  
+    .section-Fitness .parent-cards .card {
+      width: 45%;
+    }
+  
+    .section-Fitness .title h1 {
+      font-size: 40px;
+    }
+    /* ============== */
+    h1 {
+      font-size: 22px;
+    }
+  
+    th, td {
+      padding: 15px;
+      font-size: 14px;
+    }
+  
+    td span {
+      font-size: 11px;
+    }
+    /* =========best-trainer======= */
+    .best-trainer .parent-cards {
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+  
+    .best-trainer .parent-cards .card {
+      width: 45%;
+    }
+  
+    .best-trainer .parent-cards .card.mr {
+      margin: 0;
+    }
+}
+/* ================== */
+@media (max-width: 768px) {
+  nav.navbar {
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px 20px;
+  height: auto;
+}
+
+
+.menu-icon {
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.links,
+.btn {
+  display: none;
+  width: 100%;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+#menu-toggle:checked ~ .links,
+#menu-toggle:checked ~ .btn {
+  display: flex;
+}
+
+.links a {
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.dropdown-content {
+  position: static;
+  box-shadow: none;
+  background: #f8f8f8;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.btn {
+  margin-top: 10px;
+}
+
+.btn button {
+  width: 100%;
+}
+.dropdown-content {
+  top: 0;
+  left: 100%;
+}
+  /* ========== */
+    .section-Fitness {
+      height: auto;
+      padding-bottom: 50px;
+    }
+  
+    .section-Fitness .des-section-Fitness {
+      padding-top: 150px;
+      width: 90%;
+    }
+    .section-Fitness .title {
+        margin-top: 100px;
+    }
+  
+    .section-Fitness .title h1 {
+      font-size: 30px;
+    }
+  
+    .section-Fitness .parent-cards {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px; /* مسافة رأسية بين الكروت */
+    }
+  
+    .section-Fitness .parent-cards .card {
+      width: 90%;
+      margin: 0 auto;
+    }
+  
+    .video-about-Classes video {
+      width: 95%;
+      margin: 100px auto 0;
+    }
+    /* =========== */
+    .container {
+      overflow-x: auto;
+    }
+  
+    table {
+      width: 800px; /* أكبر من عرض الموبايل علشان يعمل Scroll */
+    }
+  
+    h1 {
+      font-size: 20px;
+    }
+  
+    th, td {
+      padding: 10px;
+      font-size: 13px;
+    }
+  
+    td span {
+      font-size: 10px;
+    }
+  
+    .tag {
+      font-size: 12px;
+    }
+    /* ==========best-trainer========= */
+    .best-trainer .title h1 {
+      font-size: 28px;
+    }
+  
+    .best-trainer .parent-cards .card {
+      width: 100%;
+    }
+  
+    .best-trainer {
+      height: auto;
+      padding-bottom: 40px;
+    }
+  
+    .best-trainer .des-best-trainer {
+      padding-top: 60px;
+    }
+    /* =======section-testimonial======== */
+    .section-testimonial .slider-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .section-testimonial .slider-cards .card {
+      width: 90%;
+      max-width: 320px;
+    }
+  
+    .section-testimonial .card .client-img {
+      margin: 0 auto 10px;
+    }
+  
+    .section-testimonial .parent-testimonial {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .section-testimonial .card p {
+      text-align: center;
+    }
+  
+    .section-testimonial .stars {
+      text-align: center;
+    }
+    
+}
+/* ================== */
+  
+@media (max-width: 480px) {
+    .section-Fitness .title h1 {
+      font-size: 25px;
+    }
+  
+    .section-Fitness .parent-cards .card .title-card h2 {
+      font-size: 20px;
+    }
+  
+    .section-Fitness .parent-cards .card p {
+      font-size: 14px;
+    }
+    /* ============ */
+    .container {
+      width: 95%;
+      margin-top: 30px; /* لتقليل المسافة أكثر في الموبايل */
+    }
+  
+    h1 {
+      font-size: 18px;
+    }
+  
+    th, td {
+      padding: 10px;
+    }
+  
+    td span {
+      font-size: 9px;
+    }
+  
+    table {
+      border-spacing: 5px;
+    }
+    /* ======best-trainer====== */
+    .best-trainer .parent-cards .card .image-card img {
+      width: 60%;
+      height: 160px;
+    }
+  
+    .best-trainer .parent-cards .card .title-card h2 {
+      font-size: 20px;
+    }
+  
+    .best-trainer .parent-cards .card .title-card span {
+      font-size: 11px;
+    }
+    /* =======our-statics======= */
+    .our-statics h2 {
+      font-size: 22px;
+      text-align: center;
+    }
+  
+    .our-statics p {
+      font-size: 13px;
+      text-align: center;
+    }
+  
+    .our-statics .right h3 {
+      font-size: 16px;
+      text-align: center;
+      display: block;
+      margin: 0 auto 20px;
+    }
+  
+    .our-statics .right input,
+    .our-statics .right textarea {
+      font-size: 12px;
+    }
+  
+    .our-statics .right .submit-btn {
+      font-size: 13px;
+    }
+  
+    .progress-box .voit {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 5px;
+    }
+  
+    .progress-box span,
+    .progress-box .percent {
+      text-align: left;
+      width: 100%;
+    }
+    /* =========section-testimonial======== */
+    .section-testimonial .title h1 {
+      font-size: 20px;
+    }
+  
+    .section-testimonial .title span {
+      font-size: 12px;
+      padding: 4px 10px;
+    }
+  
+    .section-testimonial .card p {
+      font-size: 12px;
+    }
+  
+    .section-testimonial .slider-dots .dot {
+      width: 10px;
+      height: 10px;
+    }
+  
+    .section-testimonial {
+      padding: 40px 10px;
+    }
+    /* =========== */
+    .footer-links a,
+  .contact-info div {
+    font-size: 13px;
+  }
+
+  .newsletter input {
+    font-size: 13px;
+  }
+
+  .social-icons i {
+    font-size: 16px;
+  }
+
+  .footer-section h3 {
+    font-size: 16px;
+  }
+
+  .footer-bottom {
+    font-size: 12px;
+  }
+}
+  
